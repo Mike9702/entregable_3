@@ -1,0 +1,17 @@
+const Loader = () => {
+  return (
+
+    <section className=" grid items-center justify-items-center">
+               
+        <article className="grid gap-y-6 justify-items-center ">
+        <img className="" src="/img/iconmorty.png" alt="" /> 
+        <div className="loader  "></div>
+        <h2 className="  w-40  text-center font-normal font-['fira-code'] text-xl text-green-700">Loading...</h2>    
+     
+    </article>
+  
+    </section>
+   
+  )
+}
+export default Loader

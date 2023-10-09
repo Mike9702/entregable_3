@@ -24,7 +24,7 @@ const ResidentList = ({ residents }) => {
           <li key={page}>
             <button
               className={`bg-white  text-black p-2 rounded-md hover:bg-green-400 ${
-                page === currentPage && "bg-red-400"
+                page === currentPage && "bg-green-400"
               }`}
               onClick={() => setCurrentPage(page)}
             >
