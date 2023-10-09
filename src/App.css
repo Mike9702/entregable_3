@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap');
+
+
+body::-webkit-scrollbar{
+    width: 15px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgb(10, 69, 10);
+    border-radius: 3px 3px 3px 3px;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+
+   
+}
+
+img {
+    border-radius: 3px 3px 0 0;    
+}
+
+
+
+.img.alive {
+    view-timeline-name: --img;
+    view-timeline-axis: block;
+
+    animation-timeline: --img;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+
+    border: 1px solid rgb(21, 255, 0);
+
+    border-radius: 3px 3px 0 0;
+    padding: 0.2px;
+}
+
+.statusBorder {
+    border: 1px solid rgb(21, 255, 0);;
+}
+
+.backgroundApp {
+background-image: url(/public/img/background\ page.svg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.headerBackground {
+content: "";
+width: 200px;
+height: 200px;
+border-radius: 885px;
+opacity: 0.42;
+background: radial-gradient(80% 80% at 47.83% 48.23%, #8EFF8B 72.49%, #020A02 88.45%);
+filter: blur(120px);
+}
+
+
