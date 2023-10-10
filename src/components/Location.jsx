@@ -41,9 +41,9 @@ const Location = ({ location, setLocation }) => {
         action=""
       >
         <input
-          placeholder="Type location of 1 - 126..."
+          placeholder="Type location..."
           name="idLocation"
-          className="text-white  outline-none px-1 border-[1px] bg-green-950 border-green-900/75"
+          className="text-white  outline-none px-1 border-[1px] rounded-sm bg-green-950 border-green-900/75"
           type="number"
           min="1" 
           required
@@ -53,7 +53,7 @@ const Location = ({ location, setLocation }) => {
         
         <button
           type="submit"
-          className={` flex gap-1 h-8 items-center justify-center border-[1px] px-1 bg-green-950  hover:bg-green-600/95 border-green-900/75 `}
+          className={` rounded-sm flex gap-1 h-8 items-center justify-center border-[1px] px-1 bg-green-950  hover:bg-green-600/95 border-green-900/75 `}
         >
          <div className="ocultar mostrar mt-[43px]">Search</div>  <IconSearch size={16} />
         </button>

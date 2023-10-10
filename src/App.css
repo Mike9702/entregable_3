@@ -2,12 +2,14 @@
 
 
 body::-webkit-scrollbar{
-    width: 15px;
+    width: 12px;
+    background-color: black;
 }
 
 body::-webkit-scrollbar-thumb{
-    background: rgb(10, 69, 10);
-    border-radius: 3px 3px 3px 3px;
+    background: rgb(239, 68, 68);
+    border-radius: 50px 
+    
 }
 
 @keyframes show {
@@ -54,13 +56,6 @@ img {
     background: #000000;
     background-image: url("/img/backgroundPoints.svg");
         
-}
-
-.circleBackground {
-  border-radius: 885px;
-  opacity: 0.42;
-  background: radial-gradient(100.54% 100.54% at 47.83% 48.23%, #8EFF8B 72.49%, #020A02 88.45%);
-  filter: blur(150px);
 }
 
 
@@ -123,7 +118,7 @@ filter: blur(120px);
     width: 20px;
     aspect-ratio: 1.154;
     clip-path: polygon(50% 0,100% 100%,0 100%);
-    --c:no-repeat linear-gradient(#062d0d 0 0);
+    --c:no-repeat linear-gradient(#16b433 0 0);
     background: var(--c),var(--c),var(--c),var(--c),var(--c);
     background-size: 100% calc(100%/5 + 1px);
     animation: l15 2s infinite;
