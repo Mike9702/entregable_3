@@ -41,7 +41,7 @@ const Location = ({ location, setLocation }) => {
         action=""
       >
         <input
-          placeholder="Type of 1 - 126..."
+          placeholder="Type location of 1 - 126..."
           name="idLocation"
           className="text-white  outline-none px-1 border-[1px] bg-green-950 border-green-900/75"
           type="number"

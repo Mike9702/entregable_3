@@ -51,10 +51,18 @@ img {
 }
 
 .backgroundApp {
-    background-color: #011801;
-    background-image: linear-gradient(254deg, #030900 0%, #030a03 18%, #000000 48%, #000000 75%, #020f02 100%);
-    
+    background: #000000;
+    background-image: url("/img/backgroundPoints.svg");
+        
 }
+
+.circleBackground {
+  border-radius: 885px;
+  opacity: 0.42;
+  background: radial-gradient(100.54% 100.54% at 47.83% 48.23%, #8EFF8B 72.49%, #020A02 88.45%);
+  filter: blur(150px);
+}
+
 
 .headerBackground {
 content: "";
