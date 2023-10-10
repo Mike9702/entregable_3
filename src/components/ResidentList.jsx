@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ResidentCard from "./ResidentCard";
 import { paginationLogic } from "../utils/pagination";
 
+
 const ResidentList = ({ residents }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const { pages, residentsInPage } = paginationLogic(currentPage, residents);
@@ -23,8 +24,8 @@ const ResidentList = ({ residents }) => {
         {pages.map((page) => (
           <li key={page}>
             <button
-              className={`bg-white  text-black p-2 rounded-md hover:bg-green-400 ${
-                page === currentPage && "bg-green-400"
+              className={` text-black p-2  rounded-md hover:bg-green-400 ${
+                page === currentPage ? "bg-red-500" : "bg-white"
               }`}
               onClick={() => setCurrentPage(page)}
             >

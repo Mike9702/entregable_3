@@ -30,7 +30,7 @@ img {
 
 
 
-.img.alive {
+.img {
     view-timeline-name: --img;
     view-timeline-axis: block;
 
@@ -40,20 +40,20 @@ img {
     animation-range: entry 25% cover 30%;
     animation-fill-mode: both;
 
-    border: 1px solid rgb(21, 255, 0);
+    border: 1px solid rgb(8, 51, 4);
 
-    border-radius: 3px 3px 0 0;
+    border-radius: 5px 5px 0px 0px;
     padding: 0.2px;
 }
 
 .statusBorder {
-    border: 1px solid rgb(21, 255, 0);;
+    border: 1px solid rgb(8, 51, 4);
 }
 
 .backgroundApp {
-background-image: url(/public/img/background\ page.svg);
-background-size: cover;
-background-repeat: no-repeat;
+    background-color: #011801;
+    background-image: linear-gradient(254deg, #030900 0%, #030a03 18%, #000000 48%, #000000 75%, #020f02 100%);
+    
 }
 
 .headerBackground {
@@ -108,4 +108,31 @@ filter: blur(120px);
         
       
     }
+  }
+
+  
+.flecha {
+    width: 20px;
+    aspect-ratio: 1.154;
+    clip-path: polygon(50% 0,100% 100%,0 100%);
+    --c:no-repeat linear-gradient(#062d0d 0 0);
+    background: var(--c),var(--c),var(--c),var(--c),var(--c);
+    background-size: 100% calc(100%/5 + 1px);
+    animation: l15 2s infinite;
+    rotate: 180deg;
+  }
+  @keyframes l15 {
+    0%  {background-position: 0 calc(-2*100%/4),0 calc(-2*100%/4),0 calc(-2*100%/4),0 calc(-2*100%/4),0 calc(-2*100%/4)}
+    20% {background-position: 0 calc(4*100%/4) ,0 calc(-2*100%/4),0 calc(-2*100%/4),0 calc(-2*100%/4),0 calc(-2*100%/4)}
+    40% {background-position: 0 calc(4*100%/4) ,0 calc(3*100%/4) ,0 calc(-2*100%/4),0 calc(-2*100%/4),0 calc(-2*100%/4)}
+    60% {background-position: 0 calc(4*100%/4) ,0 calc(3*100%/4) ,0 calc(2*100%/4) ,0 calc(-2*100%/4),0 calc(-2*100%/4)}
+    80% {background-position: 0 calc(4*100%/4) ,0 calc(3*100%/4) ,0 calc(2*100%/4) ,0 calc(1*100%/4) ,0 calc(-2*100%/4)}
+    100%{background-position: 0 calc(4*100%/4) ,0 calc(3*100%/4) ,0 calc(2*100%/4) ,0 calc(1*100%/4) ,0 calc(0*100%/4)}
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Elimina la apariencia predeterminada de los botones */
+    appearance: none;
+    margin: 0; /* Elimina el margen predeterminado */
   }

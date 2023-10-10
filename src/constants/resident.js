@@ -4,16 +4,6 @@ const characterStatus = {
   unknown: "bg-slate-700 border-[0.5px] border-white",
 };
 
-const characterStatusBorder = {
-  Alive: "img alive",
-  Dead: "img alive  ",
-  unknown: "img alive",
-};
 
-const cardStatus = {
-  Alive: "statusBorder",
-  Dead: "statusBorder",
-  unknown: "statusBorder",
-};
 
-export { characterStatus, characterStatusBorder, cardStatus };
+export { characterStatus };

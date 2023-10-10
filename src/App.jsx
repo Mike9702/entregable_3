@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <main className="min-h-screen px-4 text-white bg-black  items-center ">
+    <main className="min-h-screen px-4 text-white backgroundApp  items-center ">
       { location === null ? <Loader />   :   <Location location={location} setLocation={setLocation}/>} 
       <ResidentList residents={location?.residents ?? []} />
       

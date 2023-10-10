@@ -37,16 +37,20 @@ const Location = ({ location, setLocation }) => {
 
       <form
         onSubmit={handleSubmit}
-        className="flex   py-14 justify-center "
+        className="flex   py-14 justify-center gap-2 "
         action=""
       >
         <input
-          placeholder="Type location..."
+          placeholder="Type of 1 - 126..."
           name="idLocation"
-          className="text-white outline-none px-1 border-[1px] bg-green-950 border-green-900/75"
+          className="text-white  outline-none px-1 border-[1px] bg-green-950 border-green-900/75"
           type="number"
+          min="1" 
           required
+          
+          
         />
+        
         <button
           type="submit"
           className={` flex gap-1 h-8 items-center justify-center border-[1px] px-1 bg-green-950  hover:bg-green-600/95 border-green-900/75 `}
@@ -56,19 +60,19 @@ const Location = ({ location, setLocation }) => {
       </form>
 
       {/* location info */}
-      <section className="grid max-w-[870px] mx-auto py-4 sm:border-[1px] border-green-800 ">
+      <section className="grid max-w-[870px] mx-auto py-3 sm:border-[1px] border-green-800 ">
         <h3 className="flex justify-center text-green-600 font-['fira-code'] text-xl">
           ¡ Welcome to {location?.name} !
         </h3>
-        <ul className="flex gap-8 justify-center py-3 text-slate-500 font-['fira-code'] mx-1 mostrar ocultar ">
+        <ul className="flex gap-12 justify-center items-center py-2 h-14 text-slate-500 font-['fira-code'] mostrar ocultar ">
           <li>Type: {location?.type}</li>
           <li>Dimension: {location?.dimension}</li>
           <li>Population: {location?.residents.length}</li>
         </ul>
-        <div className="flex relative justify-center text-green-700 pt-1 ">
-          <div className="animate-bounce w-[30px] h-[30px] rounded-full border-[1px] border-green-800 text-center">
-            v
-          </div>
+        <div className="flex relative  justify-center animate-bounce text-green-700 ">
+          
+            <div className="flex flecha w-8 items-center"></div>
+          
         </div>
       </section>
     </section>

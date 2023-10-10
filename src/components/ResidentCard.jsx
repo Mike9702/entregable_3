@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { cardStatus, characterStatus, characterStatusBorder } from "../constants/resident";
+import {  characterStatus } from "../constants/resident";
 
 const ResidentCard = ({ residentEndpoint }) => {
   const [resident, setResident] = useState(null);
@@ -15,9 +15,9 @@ const ResidentCard = ({ residentEndpoint }) => {
   }, []);
 
   return (
-    <article>
-      <header className={`relative ${characterStatusBorder[resident?.status]}`}>
-        <img src={resident?.image} alt="" />
+    <article >
+      <header className="relative img  ">
+        <img className="rounded-[5px_5px_0px_0px]" src={resident?.image} alt="" />
 
         {/* Status */}
         <div className="absolute  bottom-4 left-1/2 -translate-x-1/2 bg-black/80 text-white px-4 py-1  flex items-center gap-2 rounded-md  ">
@@ -31,7 +31,7 @@ const ResidentCard = ({ residentEndpoint }) => {
           <span>{resident?.status}</span>
         </div>
       </header>
-      <div className={`${cardStatus[resident?.status]} px-3 py-1 bg-black `}>
+      <div className={` px-3 py-1 border rounded-[0px_0px_5px_5px] border-green-950`}>
         <h4 className="font-normal font-['fira-code'] text-xl truncate  ">{resident?.name}</h4>
         <ul>
           <li className="font-['fira-code'] font-normal  text-[16px] ">
