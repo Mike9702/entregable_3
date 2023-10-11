@@ -43,9 +43,9 @@ const Location = ({ location, setLocation }) => {
         <input
           placeholder="Type location..."
           name="idLocation"
-          className="text-white  outline-none px-1 border-[1px] rounded-sm bg-green-950 border-green-900/75"
+          className="text-white  w-60 outline-none px-1 border-[1px] rounded-sm bg-green-950  border-green-900/75"
           type="number"
-          min="1" 
+          min="1" max="126"
           required
           
           
