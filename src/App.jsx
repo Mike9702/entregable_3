@@ -17,11 +17,13 @@ function App() {
   }, []);
 
   return (
-    <main className="min-h-screen px-4 text-white backgroundApp   items-center ">
-      { location === null ? <Loader />   :   <Location location={location} setLocation={setLocation}/>} 
+<main className="backgroundApp h-screen" >
+      {location === null ? <Loader /> : <section className="min-h-screen backgroundApp  px-4 text-white items-center ">
+        <Location location={location} setLocation={setLocation}/>  
       <ResidentList residents={location?.residents ?? []} />
-      
-    </main>
+    </section> }
+</main>
+    
   );
 }
 

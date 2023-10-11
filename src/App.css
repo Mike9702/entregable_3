@@ -55,6 +55,7 @@ img {
 .backgroundApp {
     background: #000000;
     background-image: url("/img/backgroundPoints.svg");
+    background-repeat: none;
         
 }
 
